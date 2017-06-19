@@ -32,7 +32,11 @@
         
         return cell
     }
-    
+   // MARK: - Collection Size
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size:CGSize = CGSize(width: (collectionView.frame.width/2)-3 , height: (collectionView.frame.width/2)+24 )
+        return size
+    }
     
     
     // Collection Didselection
